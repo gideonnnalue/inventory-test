@@ -16,3 +16,13 @@ db.sequelize
 		});
 	})
 	.catch((err: Error) => console.log(err));
+
+// db.sequelize
+// 	.authenticate()
+// 	.then(() => {
+// 		app.listen(port || 5000, () => {
+// 			console.log(`app listening on ports ${port}`);
+//       return true;
+// 		});
+// 	})
+// 	.catch((err: Error) => console.log(err));
