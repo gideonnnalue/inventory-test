@@ -39,6 +39,7 @@ export default {
 			// console.log(result);
 			return utilityResponse({ message: 'Success adding item', res, statusCode: 201 });
 		} catch (err) {
+			console.log(err);
 			return utilityResponse({ message: 'Internal server error', res, statusCode: 500 });
 		}
 	},
@@ -81,6 +82,7 @@ export default {
 				statusCode: 200,
 			});
 		} catch (err) {
+			console.log(err);
 			return utilityResponse({ message: 'Internal server error', res, statusCode: 500 });
 		}
 	},
@@ -160,6 +162,7 @@ export default {
 			});
 			return utilityResponse({ message: 'Success fetching item', res, statusCode: 200 });
 		} catch (err) {
+			console.log(err);
 			return utilityResponse({ message: 'Internal server error', res, statusCode: 500 });
 		}
 	},
