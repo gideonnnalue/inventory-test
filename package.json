@@ -8,7 +8,7 @@
     "start-dev": "ts-node src/index.ts",
     "build-dev": "tsc && npm start",
     "build": "rimraf build && tsc",
-    "postinstall": "npm run build",
+    "postinstall": "sequelize db:migrate npm run build",
     "dev": "nodemon -e ts -w ./ -x npm run start-dev",
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
     "pretest": "cross-env NODE_ENV=test npm run db:reset",
