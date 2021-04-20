@@ -82,7 +82,6 @@ export default {
 				statusCode: 200,
 			});
 		} catch (err) {
-			console.log(err);
 			return utilityResponse({ message: 'Internal server error', res, statusCode: 500 });
 		}
 	},
