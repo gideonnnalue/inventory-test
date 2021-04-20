@@ -10,11 +10,11 @@ module.exports = {
 		username: process.env.DB_USER,
 	},
 	production: {
-		database: 'database_production',
+		database: process.env.DATABASE_PRODUCTION,
 		dialect: 'postgres',
 		host: '127.0.0.1',
 		native: true,
-		password: null,
+		password: process.env.DATABASE_PASSWORD,
 		pool: {
 			evict: 10000,
 			idle: 10000,
