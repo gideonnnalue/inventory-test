@@ -7,7 +7,7 @@
     "start": "node build/index.js",
     "start-dev": "ts-node src/index.ts",
     "build-dev": "tsc && npm start",
-    "build": "tsc",
+    "build": "rimraf build && tsc",
     "postinstall": "npm run build",
     "dev": "nodemon -e ts -w ./ -x npm run start-dev",
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
