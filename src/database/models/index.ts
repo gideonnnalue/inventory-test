@@ -11,6 +11,8 @@ const config = require(path.join(__dirname, '/../config/config'))[env];
 
 const db: any = {};
 
+const fileType = process.env.NODE_ENV === 'development' ? '.ts' : '.js';
+
 let sequelize: any;
 if (config.use_env_variable) {
 	sequelize = new Sequelize.Sequelize(process.env[config.use_env_variable] as string, config);
@@ -19,7 +21,7 @@ if (config.use_env_variable) {
 }
 
 fs.readdirSync(__dirname)
-	.filter((file: string) => file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.ts')
+	.filter((file: string) => file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === fileType)
 	.forEach((file: any) => {
 		const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
 		db[model.name] = model;
