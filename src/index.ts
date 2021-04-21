@@ -17,7 +17,7 @@ db.sequelize
 	})
 	.catch((err: Error) => console.log(err));
 
-// db.sequelize
+// db.sequelize.
 // 	.authenticate()
 // 	.then(() => {
 // 		app.listen(port || 5000, () => {
