@@ -1,9 +1,9 @@
 'use strict';
 module.exports = {
-	down: async (queryInterface: any, Sequelize: any) => {
+	down: async (queryInterface, Sequelize) => {
 		await queryInterface.dropTable('Items');
 	},
-	up: async (queryInterface: any, Sequelize: any) => {
+	up: async (queryInterface, Sequelize) => {
 		await queryInterface.createTable('Items', {
 			createdAt: {
 				allowNull: false,
