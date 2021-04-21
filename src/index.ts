@@ -12,7 +12,7 @@ db.sequelize
 	.then(() => {
 		app.listen(port || 5000, () => {
 			console.log(`app listening on ports ${port}`);
-      return true;
+			return true;
 		});
 	})
 	.catch((err: Error) => console.log(err));
