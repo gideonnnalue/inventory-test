@@ -31,8 +31,7 @@
     "pg-hstore": "^2.3.3",
     "pg-native": "^3.0.0",
     "reflect-metadata": "^0.1.13",
-    "sequelize": "^6.6.2",
-    "tsc": "^1.20150623.0"
+    "sequelize": "^6.6.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
