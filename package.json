@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node build/index.js",
     "start-dev": "ts-node src/index.ts",
     "build-dev": "tsc && npm start",
     "build": "rimraf build && tsc",
