@@ -13,5 +13,4 @@ cron.schedule('59 23 * * *', async () => {
 			},
 		},
 	});
-	console.log('running a task every minute');
 });
